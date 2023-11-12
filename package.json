@@ -1,0 +1,19 @@
+{
+  "name": "codebook-terminal",
+  "version": "1.0.0",
+  "description": " A sleek React.js terminal emulator for enhanced user interaction. Execute commands and visualize progress with customizable themes. Tailor appearance, add commands, and elevate your app's engagement. Try React Terminal Kit for a modern command-line experience!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "terminal",
+    "npm-package"
+  ],
+  "author": "Adithyan M",
+  "license": "MIT",
+  "devDependencies": {
+    "npmignore": "^0.3.0"
+  }
+}
