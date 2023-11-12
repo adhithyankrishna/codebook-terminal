@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../CSS/Terminal.css";
 
-
-
-const Terminal = ({
+const codebookTerminal = ({
   setUserInput,
   userOutput,
   mode,
@@ -211,4 +209,4 @@ const Terminal = ({
 };
 
 // Export the Terminal component
-export default Terminal;
+export default codebookTerminal;
