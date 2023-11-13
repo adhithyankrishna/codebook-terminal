@@ -34,8 +34,7 @@ const codebookTerminal = ({
       description: "about list of commands available to call ",
       usage: "list command ",
       fn: () => (
-        <div>
-          {Object.keys(commands).map((command) => (
+        <>  {Object.keys(commands).map((command) => (
             <div key={command}>
               <p>Command: {command}</p>
               <p>Description: {commands[command].description}</p>
@@ -43,7 +42,7 @@ const codebookTerminal = ({
               <br />
             </div>
           ))}
-        </div>
+      </>
       ),
     },
     clear: {
