@@ -19,7 +19,12 @@
   },
   "files": [
     "codebookTerminal.js",
-    "src/"
+    "src/",
+    "css/",
+    "Terminal.css",
+    ".babelrc",
+    "README.MD"
+
   ],
   "dependencies": {
     "npmignore": "^0.3.0"
