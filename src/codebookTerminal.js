@@ -14,7 +14,6 @@ const codebookTerminal = ({
   progressBarColor = "#50f50f",
   progres = 0,
 }) => {
-
   // State variables
   const [input, setInput] = useState("");
   const [output, setOutput] = useState([welcomeMessage]);
@@ -33,17 +32,20 @@ const codebookTerminal = ({
     help: {
       description: "about list of commands available to call ",
       usage: "list command ",
-      fn: () => (
-        <>  {Object.keys(commands).map((command) => (
-            <div key={command}>
-              <p>Command: {command}</p>
-              <p>Description: {commands[command].description}</p>
-              <p>Usage: {commands[command].usage}</p>
-              <br />
-            </div>
-          ))}
-      </>
-      ),
+      fn: () => {
+        let result = "";
+        Object.keys(commands).forEach((command) => {
+          result += `
+      <div key="${command}">
+        <p>Command: ${command}</p>
+        <p>Description: ${commands[command].description}</p>
+        <p>Usage: ${commands[command].usage}</p>
+        <br />
+      </div>
+    `;
+        });
+        return result;
+      },
     },
     clear: {
       description: "Clear the terminal screen",
@@ -102,7 +104,7 @@ const codebookTerminal = ({
         const output = commands[command].fn(...args);
         setOutput((prev) => [...prev, output]);
       } else {
-        setOutput((prev) => [            
+        setOutput((prev) => [
           ...prev,
           `${command} not found in type help for a list of commands`,
         ]);
