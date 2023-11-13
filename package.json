@@ -1,8 +1,8 @@
 {
   "name": "codebook-terminal",
-  "version": "2.2.0",
+  "version": "2.1.0",
   "description": "A sleek React.js terminal emulator for enhanced user interaction...",
-  "main": "codebookTerminal.js",
+  "main": "src/codebookTerminal.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/codebook-terminal.git"
+    "url": "https://github.com/adhithyankrishna/codebook-terminal"
   },
   "files": [
     "codebookTerminal.js",

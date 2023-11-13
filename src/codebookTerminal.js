@@ -14,6 +14,7 @@ const codebookTerminal = ({
   progressBarColor = "#50f50f",
   progres = 0,
 }) => {
+
   // State variables
   const [input, setInput] = useState("");
   const [output, setOutput] = useState([welcomeMessage]);
@@ -102,7 +103,7 @@ const codebookTerminal = ({
         const output = commands[command].fn(...args);
         setOutput((prev) => [...prev, output]);
       } else {
-        setOutput((prev) => [
+        setOutput((prev) => [            
           ...prev,
           `${command} not found in type help for a list of commands`,
         ]);
