@@ -1,6 +1,6 @@
 {
   "name": "codebook-terminal",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "A sleek React.js terminal emulator for enhanced user interaction...",
   "main": "src/codebookTerminal.js",
   "scripts": {
