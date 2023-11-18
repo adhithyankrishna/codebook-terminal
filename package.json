@@ -23,7 +23,8 @@
     "css/",
     "Terminal.css",
     ".babelrc",
-    "README.MD"
+    "README.MD",
+    "babel.config.js"
   ],
   "dependencies": {
     "@babel/cli": "^7.23.0",
