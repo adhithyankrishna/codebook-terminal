@@ -32,20 +32,18 @@ const codebookTerminal = ({
     help: {
       description: "about list of commands available to call ",
       usage: "list command ",
-      fn: () => {
-        let result = "";
-        Object.keys(commands).forEach((command) => {
-          result += `
-      <div key="${command}">
-        <p>Command: ${command}</p>
-        <p>Description: ${commands[command].description}</p>
-        <p>Usage: ${commands[command].usage}</p>
-        <br />
-      </div>
-    `;
-        });
-        return result;
-      },
+      fn: () => (
+        <div>
+          {Object.keys(commands).map((command) => (
+            <div key={command}>
+              <p>Command: {command}</p>
+              <p>Description: {commands[command].description}</p>
+              <p>Usage: {commands[command].usage}</p>
+              <br />
+            </div>
+          ))}
+        </div>
+      ),
     },
     clear: {
       description: "Clear the terminal screen",
