@@ -16,21 +16,25 @@
     background-color: rgb(41, 41, 41);
     outline: none;
     border: none;
-    font-size: 18px;
+    font-size: 100%;
 }
 
 .prompt {
-    font-size: 18px;
+    font-size: 100%;
 }
 
 .input-area {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 27px;
+    height: 7%;
     background-color: rgb(41, 41, 41);
 }
 
 body {
     margin: 0;
+}
+.output{
+    text-align: left;
+
 }

@@ -33,7 +33,7 @@ Elevate your coding experience with CodeBook Terminal – where functionality me
 
 2. **Usage:**
     ```javascript
-    import Terminal from 'codebook-terminal';
+    import CodebookTerminal from "codebook-terminal";
 
     // Your code here
     ```
@@ -108,11 +108,11 @@ Welcome to the README for the Terminal component! 🚀 This versatile React comp
 ## Example Usage
 
 ```jsx
-import Terminal from './Terminal';
+import CodebookTerminal from "codebook-terminal";
 
 const MyTerminalApp = () => {
   return (
-    <Terminal
+    <CodebookTerminal
       setUserInput={handleUserInput}
       userOutput={outputMessage}
       mode="command"

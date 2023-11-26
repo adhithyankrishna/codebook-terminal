@@ -1,11 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../CSS/Terminal.css";
+import "../css/Terminal.css";
 
 const codebookTerminal = ({
   setUserInput,
   userOutput,
   mode,
-  userCommand,
+  userCommand = {
+    about: {
+      description: "To know about us ...",
+      fn: () =>
+        "<<<<<<<<<<<<<<<<<<this is online code editor for developer and creator>>>>>>>>>>>>>>>>>>>>>>\n<<<<<<<<<<<<<<<<.............................................................>>>>>>>>>>>>>>>>",
+    },
+  },
   background = "#292929",
   welcomeMessage = "Welcome to the Terminal! 🚀\nFeel free to explore and type 'help' for a list of available commands.",
   textColor = "#dbd8d5",

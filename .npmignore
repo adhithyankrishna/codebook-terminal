@@ -1,0 +1,10 @@
+# Exclude specific files
+example/
+docs/
+
+
+# Exclude all .env files
+.env
+
+# Exclude node_modules directory
+node_modules/
